@@ -5,7 +5,8 @@ packages <- c("tidyverse",
               "data.table",
               "readr",
               "dplyr",
-              "openxlsx")
+              "openxlsx",
+              "psych")
 
 usePackage <-function(p){
   if (!is.element(p, installed.packages()[,1])){
@@ -25,7 +26,11 @@ for(i in 1:length(sheetnames)){
   assign(sheetnames[i], readWorkbook(a, sheet = i))
 }
 
-###describe data 
+###describe data#### 
+
+
+
+
 
 ###test
 
